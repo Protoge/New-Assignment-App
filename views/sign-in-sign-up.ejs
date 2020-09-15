@@ -1,0 +1,86 @@
+<%- include("partials/header") -%> <%- include("partials/alert-messages") -%>
+<div class="container-parent">
+  <div class="container" style="top:-50px">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center" style="color:black">Sign In</h5>
+            <form class="form-signin" method="post" action="/student/signin">
+              <div class="form-label-group mb-3">
+                <input
+                  type="text"
+                  id="inputEmail"
+                  class="form-control"
+                  placeholder="Username"
+                  required
+                  autofocus
+                  name="username"
+                />
+              </div>
+
+              <div class="form-label-group">
+                <input
+                  type="password"
+                  id="inputPassword"
+                  class="form-control mb-3"
+                  placeholder="Password"
+                  required
+                  name="password"
+                />
+              </div>
+              <button
+                class="btn btn-lg btn-primary btn-block text-uppercase"
+                type="submit"
+              >
+                Sign in
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center" style="color:black">Sign Up</h5>
+            <form class="form-signin" method="post" action="/student/register">
+              <div class="form-label-group mb-3">
+                <input
+                  type="text"
+                  id="inputEmail"
+                  class="form-control"
+                  placeholder="Username"
+                  required
+                  autofocus
+                  name="username"
+                />
+              </div>
+
+              <div class="form-label-group">
+                <input
+                  type="password"
+                  id="inputPassword"
+                  class="form-control mb-3"
+                  placeholder="Password"
+                  required
+                  name="password"
+                />
+              </div>
+              <button
+                class="btn btn-lg btn-primary btn-block text-uppercase"
+                type="submit"
+              >
+                Sign up
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include("partials/footer") -%>

@@ -1,0 +1,15 @@
+<% if(success_msg != ''){ %>
+<div class="alert alert-primary" role="alert">
+  <%=success_msg%>>
+</div>
+<% } %> <% if(error != ''){ %>
+<div
+  class="err alert alert-dismissible fade show mt-4 child-background-1 card-opacity-error"
+  role="alert"
+>
+  <h6 class="text-white"><%= error%></h6>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<% } %>
